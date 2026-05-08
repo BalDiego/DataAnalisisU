@@ -1,8 +1,11 @@
 # DataAnalisisU
-# Proyecto de Analítica de Datos – Plataforma de Streaming
+# Proyecto de Analítica de Datos – Netflix
 
 ## Descripción del Proyecto
-Este proyecto consiste en el diseño e implementación de una solución de analítica de datos para una plataforma de streaming. Se construye un **Data Warehouse** a partir de un sistema transaccional (OLTP) con el objetivo de analizar el comportamiento de los usuarios y generar insights que apoyen la toma de decisiones.
+El proyecto toma como referencia el funcionamiento de la plataforma de streaming Netflix
+, la cual genera grandes volúmenes de datos provenientes de interacciones de usuarios, reproducciones, búsquedas y sistemas de recomendación.
+
+El objetivo es diseñar una arquitectura analítica basada en un Data Warehouse que permita centralizar y analizar información relacionada con el comportamiento de los usuarios, el consumo de contenido y los niveles de retención dentro de la plataforma.
 
 El sistema integra datos de:
 - Usuarios  
@@ -60,6 +63,18 @@ Se implementa un flujo ETL que:
 
 ---
 
+
+## Objetivos Analíticos
+
+- Analizar patrones de consumo  
+- Identificar factores de retención y abandono  
+- Medir el engagement de usuarios  
+- Evaluar la efectividad de recomendaciones  
+- Desarrollar modelos predictivos de churn
+
+---
+
+
 ## Hipótesis de Análisis
 
 El proyecto se basa en las siguientes hipótesis:
@@ -70,16 +85,7 @@ El proyecto se basa en las siguientes hipótesis:
 - La **diversidad de contenido** reduce la probabilidad de churn  
 - Las **recomendaciones personalizadas** aumentan el engagement  
 - La **satisfacción del usuario** (ratings) se asocia con mayor retención  
-
----
-
-## Objetivos Analíticos
-
-- Analizar patrones de consumo  
-- Identificar factores de retención y abandono  
-- Medir el engagement de usuarios  
-- Evaluar la efectividad de recomendaciones  
-- Desarrollar modelos predictivos de churn  
+ 
 
 ---
 
