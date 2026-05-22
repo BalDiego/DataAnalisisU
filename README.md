@@ -74,6 +74,71 @@ Se implementa un flujo ETL que:
 
 ---
 
+## Variables Analíticas del Proyecto
+
+### Tiempo de Visualización
+- Tipo: Cuantitativa continua  
+- Unidad: Minutos / horas consumidas  
+- Relación: ↑ tiempo de visualización → ↑ retención  
+
+### Frecuencia de Uso
+- Tipo: Cuantitativa discreta  
+- Unidad: Número de sesiones por semana  
+- Relación: ↑ frecuencia → ↓ churn  
+
+### Tiempo de Inactividad
+- Tipo: Cuantitativa continua  
+- Unidad: Días sin actividad  
+- Relación: ↑ inactividad → ↑ probabilidad de abandono  
+
+### Diversidad de Contenido Consumido
+- Tipo: Cuantitativa discreta  
+- Unidad: Cantidad de géneros consumidos  
+- Relación: ↑ diversidad → ↑ retención  
+
+### Engagement
+- Tipo: Cuantitativa continua  
+- Unidad: Score o índice compuesto  
+- Relación: ↑ engagement → ↑ retención  
+
+### Retención
+- Tipo: Cuantitativa continua  
+- Unidad: Porcentaje de usuarios activos  
+- Relación: Variable dependiente principal  
+
+### Churn (Abandono)
+- Tipo: Binaria  
+- Unidad: 0 = activo / 1 = cancelado  
+- Relación: Variable objetivo del análisis predictivo  
+
+### Rating Promedio
+- Tipo: Cuantitativa ordinal  
+- Unidad: Escala de 1–5  
+- Relación: ↑ satisfacción → ↑ retención  
+
+### Interacción con Recomendaciones
+- Tipo: Cuantitativa continua  
+- Unidad: CTR / porcentaje de conversión  
+- Relación: ↑ interacción → ↑ engagement  
+
+### Búsquedas Realizadas
+- Tipo: Cuantitativa discreta  
+- Unidad: Número de búsquedas  
+- Relación: Altas búsquedas sin reproducción → posible frustración  
+
+### Search Success Rate
+- Tipo: Cuantitativa continua  
+- Unidad: % de búsquedas exitosas  
+- Relación: ↑ éxito → ↑ satisfacción y retención  
+
+### Tipo de Suscripción
+- Tipo: Categórica nominal  
+- Unidad: Free / Premium  
+- Relación: Premium → mayor engagement y retención  
+
+
+---
+
 
 ## Hipótesis de Análisis
 
