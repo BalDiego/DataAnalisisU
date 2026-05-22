@@ -126,11 +126,6 @@ Se implementa un flujo ETL que:
 - Unidad: Número de búsquedas  
 - Relación: Altas búsquedas sin reproducción → posible frustración  
 
-### Search Success Rate
-- Tipo: Cuantitativa continua  
-- Unidad: % de búsquedas exitosas  
-- Relación: ↑ éxito → ↑ satisfacción y retención  
-
 ### Tipo de Suscripción
 - Tipo: Categórica nominal  
 - Unidad: Free / Premium  
@@ -149,7 +144,9 @@ El proyecto se basa en las siguientes hipótesis:
 - La **inactividad** incrementa el riesgo de abandono  
 - La **diversidad de contenido** reduce la probabilidad de churn  
 - Las **recomendaciones personalizadas** aumentan el engagement  
-- La **satisfacción del usuario** (ratings) se asocia con mayor retención  
+- La **satisfacción del usuario** (ratings) se asocia con mayor retención
+- Los usuarios con **suscripción premium** presentan mayores niveles de engagement y retención que los usuarios gratuitos.
+- Un alto número de **búsquedas** sin reproducción posterior puede indicar baja satisfacción del usuario.
  
 
 ---
