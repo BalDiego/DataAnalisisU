@@ -76,6 +76,12 @@ Se implementa un flujo ETL que:
 
 ## Variables Analíticas del Proyecto
 
+Las variables del proyecto se clasifican en:
+
+- Variables independientes: tiempo de visualización, frecuencia de uso, inactividad, diversidad de contenido, tipo de suscripción, interacción con recomendaciones.
+- Variables dependientes: retención, engagement y churn.
+- Métricas de evaluación: CTR, tasa de conversión, rating promedio, porcentaje de usuarios activos.
+``
 ### Tiempo de Visualización
 - Tipo: Cuantitativa continua  
 - Unidad: Minutos / horas consumidas  
@@ -112,9 +118,9 @@ Se implementa un flujo ETL que:
 - Relación: Variable objetivo del análisis predictivo  
 
 ### Rating Promedio
-- Tipo: Cuantitativa ordinal  
-- Unidad: Escala de 1–5  
-- Relación: ↑ satisfacción → ↑ retención  
+- Tipo: Cuantitativa continua derivada de una escala ordinal  
+- Unidad: Promedio de calificaciones en escala de 1 a 5  
+- Relación: A mayor rating promedio, mayor satisfacción y posible retención.
 
 ### Interacción con Recomendaciones
 - Tipo: Cuantitativa continua  
@@ -128,8 +134,8 @@ Se implementa un flujo ETL que:
 
 ### Tipo de Suscripción
 - Tipo: Categórica nominal  
-- Unidad: Free / Premium  
-- Relación: Premium → mayor engagement y retención  
+- Unidad: Estándar / Premium  
+- Relación: Los planes de mayor nivel pueden asociarse con mayor consumo, engagement y retención.
 
 
 ---
