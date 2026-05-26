@@ -139,7 +139,7 @@ Se implementa un flujo ETL que:
 
 El proyecto se basa en las siguientes hipótesis:
 
-| Variable que se está midiendo | Indicador  |
+| Variable que se está midiendo | Indicador de analisis   |
 |---|---|
 | Tiempo de visualización y frecuencia de uso | Los usuarios que presentan mayor tiempo de visualización y utilizan la plataforma con mayor frecuencia tienen una mayor probabilidad de retención, debido a que muestran un nivel más alto de compromiso con el servicio de streaming. |
 | Inactividad del usuario | Los usuarios que permanecen largos periodos sin interactuar con la plataforma presentan un mayor riesgo de abandono o churn, ya que la falta de actividad puede indicar pérdida de interés en el contenido o en el servicio. |
