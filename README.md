@@ -139,15 +139,19 @@ Se implementa un flujo ETL que:
 
 El proyecto se basa en las siguientes hipótesis:
 
-- El **tiempo de visualización** impacta positivamente en la retención  
-- La **frecuencia de uso** reduce el churn  
-- La **inactividad** incrementa el riesgo de abandono  
-- La **diversidad de contenido** reduce la probabilidad de churn  
-- Las **recomendaciones personalizadas** aumentan el engagement  
-- La **satisfacción del usuario** (ratings) se asocia con mayor retención
-- Los usuarios con **suscripción premium** presentan mayores niveles de engagement y retención que los usuarios gratuitos.
-- Un alto número de **búsquedas** sin reproducción posterior puede indicar baja satisfacción del usuario.
- 
+| Variable que se está midiendo | Indicador  |
+|---|---|
+| Tiempo de visualización y frecuencia de uso | Los usuarios que presentan mayor tiempo de visualización y utilizan la plataforma con mayor frecuencia tienen una mayor probabilidad de retención, debido a que muestran un nivel más alto de compromiso con el servicio de streaming. |
+| Inactividad del usuario | Los usuarios que permanecen largos periodos sin interactuar con la plataforma presentan un mayor riesgo de abandono o churn, ya que la falta de actividad puede indicar pérdida de interés en el contenido o en el servicio. |
+| Diversidad de contenido consumido | Los usuarios que consumen una mayor variedad de géneros, categorías o formatos de contenido presentan menor probabilidad de churn, debido a que encuentran más opciones relevantes dentro del catálogo de la plataforma. |
+| Visualización de tráileres en el espacio de recomendación | Los usuarios que visualizan tráileres dentro del área de recomendaciones personalizadas presentan un mayor nivel de engagement, ya que este tipo de interacción puede influir en la decisión de reproducir posteriormente una película o serie. |
+| Recomendaciones personalizadas | Las recomendaciones personalizadas incrementan la probabilidad de reproducción de contenido y aumentan el engagement del usuario, al facilitar el descubrimiento de títulos acordes con sus preferencias e historial de consumo. |
+| Satisfacción del usuario mediante ratings o calificaciones | Los usuarios que califican positivamente el contenido consumido presentan mayores niveles de retención, ya que una valoración alta puede reflejar satisfacción con la experiencia ofrecida por la plataforma. |
+| Tipo de suscripción del usuario | Los usuarios con suscripción premium consumen más contenido y presentan mayores niveles de engagement y retención que los usuarios con suscripción estándar o gratuita, debido a que tienen mayor acceso a funcionalidades, calidad de servicio o beneficios adicionales. |
+| Fuente de descubrimiento del contenido | Las películas o series reproducidas a partir de recomendaciones personalizadas tienen mayor probabilidad de ser vistas que aquellas encontradas únicamente mediante búsqueda manual, debido a la influencia del sistema de recomendación en el comportamiento del usuario. |
+| Búsquedas realizadas y reproducción posterior | Cuando un usuario realiza búsquedas y posteriormente reproduce contenido relacionado, se evidencia una intención clara de consumo; sin embargo, si existen muchas búsquedas sin reproducción, esto puede indicar que el contenido sugerido o disponible no satisface sus expectativas. |
+| Interacción con el sistema de recomendación | Un mayor nivel de interacción con elementos recomendados, como clics, visualización de tráileres o reproducción de títulos sugeridos, se asocia con un incremento en el engagement y en la permanencia del usuario dentro de la plataforma. |
+
 
 ---
 
