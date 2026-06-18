@@ -79,7 +79,7 @@ Se implementa un flujo ETL que:
 Las variables del proyecto se clasifican en:
 
 - Variables independientes: tiempo de visualización, frecuencia de uso, inactividad, diversidad de contenido, tipo de suscripción, interacción con recomendaciones.
-- Variables dependientes: retención, engagement y churn.
+- Variables dependientes: retención, engagement y churn (probabilidad de abandono).
 - Métricas de evaluación: CTR, tasa de conversión, rating promedio, porcentaje de usuarios activos.
 ``
 ### Tiempo de Visualización
@@ -132,10 +132,6 @@ Las variables del proyecto se clasifican en:
 - Unidad: Número de búsquedas  
 - Relación: Altas búsquedas sin reproducción → posible frustración  
 
-### Tipo de Suscripción
-- Tipo: Categórica nominal  
-- Unidad: Estándar / Premium  
-- Relación: Los planes de mayor nivel pueden asociarse con mayor consumo, engagement y retención.
 
 
 ---
@@ -147,15 +143,11 @@ El proyecto se basa en las siguientes hipótesis:
 
 | Variable que se está midiendo | Indicador de análisis | Prueba de Fiabilidad / Método de Validación |
 |---|---|---|
-| Tiempo de visualización y frecuencia de uso | Los usuarios que presentan mayor tiempo de visualización y utilizan la plataforma con mayor frecuencia tienen una mayor probabilidad de retención, debido a que muestran un nivel más alto de compromiso con el servicio de streaming. | Correlación de Pearson/Spearman y regresión logística para evaluar su influencia sobre la retención. |
-| Diversidad de contenido consumido | Los usuarios que consumen una mayor variedad de géneros, categorías o formatos de contenido presentan menor probabilidad de churn, debido a que encuentran más opciones relevantes dentro del catálogo de la plataforma. | Análisis de correlación y segmentación de usuarios mediante clustering. |
-| Visualización de tráileres en el espacio de recomendación | Los usuarios que visualizan tráileres dentro del área de recomendaciones personalizadas presentan un mayor nivel de engagement, ya que este tipo de interacción puede influir en la decisión de reproducir posteriormente una película o serie. | Comparación de medias y análisis de conversión entre usuarios que visualizan y no visualizan tráileres. |
+| Tiempo de visualización y frecuencia de uso | Los usuarios que presentan mayor tiempo de visualización y utilizan la plataforma con mayor frecuencia tienen una mayor probabilidad de retención, debido a que muestran un nivel más alto de compromiso con el servicio de streaming. | Correlación de Pearson/Spearman y regresión logística para evaluar su influencia sobre la retención. | 
+| Diversidad de contenido consumido | Los usuarios que consumen una mayor variedad de géneros, categorías o formatos de contenido presentan menor probabilidad de churn, debido a que encuentran más opciones relevantes dentro del catálogo de la plataforma. | Análisis de correlación y segmentación de usuarios mediante clustering. | 
 | Recomendaciones personalizadas | Las recomendaciones personalizadas incrementan la probabilidad de reproducción de contenido y aumentan el engagement del usuario, al facilitar el descubrimiento de títulos acordes con sus preferencias e historial de consumo. | Análisis de CTR (Click Through Rate), tasa de conversión y regresión estadística. |
-| Satisfacción del usuario mediante ratings o calificaciones | Los usuarios que califican positivamente el contenido consumido presentan mayores niveles de retención, ya que una valoración alta puede reflejar satisfacción con la experiencia ofrecida por la plataforma. | Correlación entre rating promedio y métricas de retención o churn. |
-| Tipo de suscripción del usuario | Los usuarios con suscripción premium consumen más contenido y presentan mayores niveles de engagement y retención que los usuarios con suscripción estándar, debido a que tienen mayor acceso a funcionalidades, calidad de servicio o beneficios adicionales. | Prueba t de Student o ANOVA para comparar diferencias entre grupos de suscripción. |
-| Fuente de descubrimiento del contenido | Las películas o series reproducidas a partir de recomendaciones personalizadas tienen mayor probabilidad de ser vistas que aquellas encontradas únicamente mediante búsqueda manual, debido a la influencia del sistema de recomendación en el comportamiento del usuario. | Comparación de tasas de reproducción según fuente de descubrimiento y prueba Chi-cuadrado. |
-| Búsquedas realizadas y reproducción posterior | Cuando un usuario realiza búsquedas y posteriormente reproduce contenido relacionado, se evidencia una intención clara de consumo; sin embargo, si existen muchas búsquedas sin reproducción, esto puede indicar que el contenido sugerido o disponible no satisface sus expectativas. | Análisis de correlación entre búsquedas exitosas y reproducciones posteriores. |
-| Interacción con el sistema de recomendación | Un mayor nivel de interacción con elementos recomendados, como clics, visualización de tráileres o reproducción de títulos sugeridos, se asocia con un incremento en el engagement y en la permanencia del usuario dentro de la plataforma. | Regresión lineal y análisis de correlación entre interacción, engagement y retención. |
+| Fuente de descubrimiento del contenido | Las películas o series reproducidas a partir de recomendaciones personalizadas tienen mayor probabilidad de ser vistas que aquellas encontradas únicamente mediante búsqueda manual, debido a la influencia del sistema de recomendación en el comportamiento del usuario. | Comparación de tasas de reproducción según fuente de descubrimiento y prueba Chi-cuadrado. | 
+
 
 ---
 
